@@ -1,13 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Manrope', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #191919;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar{
+  display: flex;
+  justify-content: center;
+  background-color: #101010;
+  height: 5.7rem;
+}
+nav{
+  border-bottom: 1px solid rgb(209, 208, 208);
+  width: 1120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul{
+  display: flex;
+}
+ul li{
+  list-style: none;
+  padding: 0px 20px;
+}
+ul li a{
+  font-size: 0.813rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+ul li a:hover{
+  color: orange;
+}
+.logo{
+  font-size: 1.7rem;
+  font-weight: 900;
+}
+ul li a, .logo{
+  color: white;
+}
+.first_link{
+  padding-left: 0px;
+}
+
+@media only screen and (max-width: 1160px) {
+  nav{
+    width: 90%;
+  }
 }
