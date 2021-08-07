@@ -39,6 +39,7 @@ ul li a:hover{
 .logo{
   font-size: 1.7rem;
   font-weight: 900;
+  margin-left: 20px;
 }
 ul li a, .logo{
   color: white;
@@ -46,9 +47,44 @@ ul li a, .logo{
 .first_link{
   padding-left: 0px;
 }
+.logo_hamburger_outer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shopping_cart_icon_outer{
+  margin-left: 20px;
+}
+.hamburger_icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 20px;
+  margin-bottom: 4px;
+  display: none;
+}
+.hamburger_lines{
+  width: 20px;
+  height: 2.6px;
+  background-color: white;
+  margin: 2px 0px;
 
+}
 @media only screen and (max-width: 1160px) {
   nav{
     width: 90%;
+    border: none;
+  }
+  .navbar{
+    border-bottom: 1px solid rgb(209, 208, 208);
+  }
+}
+@media only screen and (max-width: 860px) {
+  .hamburger_icon{
+    display: flex
+  }
+  .nav_ul{
+    display: none;
   }
 }
