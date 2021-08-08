@@ -27,6 +27,10 @@ function Navbar() {
           <img src="https://otmanezahhari.github.io/Audiophile/assets/shared/desktop/icon-cart.svg" alt="Cart"/>
         </div>
       </nav>
+
+      <div className="header">
+        <img className="hero_image" src="https://github.com/otmanezahhari/Audiophile/blob/master/src/assets/home/desktop/image-hero.jpg" alt="hero_image"/>
+      </div>
     </div>
   );
 }

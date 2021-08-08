@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #191919;
+}
+.audio-gear{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.audio-inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 1090px;
+    gap: 7rem;
+}
+.audio-heading, .best{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 44px;
+}
+.best{
+    padding-right: 1rem;
+    color: rgb(216, 125, 74);
+}
+.audio-text-outer{
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+.audio-text{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(137, 137, 137);
+    letter-spacing: 0.7px;
+}
+@media only screen and (max-width: 1160px) {
+    .image-best-gear-image{
+        content: url('https://raw.githubusercontent.com/otmanezahhari/Audiophile/master/src/assets/shared/tablet/image-best-gear.jpg');
+        width: 90%;
+        border-radius: 0.8rem;
+        margin-bottom: -2rem;
+    }
+    .audio-inner{
+        flex-direction: column-reverse;
+    }
+    .audio-heading, .best{
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 50px;
+    }
+    .audio-heading-outer{
+        width: 70%;
+        text-align: center;
+        flex-direction: column;
+    }
+    .audio-text{
+        font-size: 1.2rem;
+        line-height: 26px;
+        text-align: center;
+    }
+    .audio-text-outer{
+        justify-self: center;
+        align-items: center;
+        width: 80%;
+        margin-bottom: 5rem;
+        gap: 2.5rem;
+    }
+
+}
+
+@media only screen and (max-width: 605px) {
+    .image-best-gear-image{
+        content: url('https://otmanezahhari.github.io/Audiophile/assets/shared/desktop/image-best-gear.jpg');
+        height: 400px;
+    }
+    .audio-heading, .best{
+        font-size: 37px;
+    }
+
+    .audio-text{
+        font-size: 1rem;
+        line-height: 24px;
+        text-align: center;
+    }
+    .audio-heading-outer{
+        width: 100%;
+    }
+    .audio-text-outer{
+        width: 90%;
+    }
+}
+
+
+
+  

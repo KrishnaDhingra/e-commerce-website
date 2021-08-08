@@ -1,5 +1,7 @@
+import Header from './components/Header/index.js'
 import Navbar from './components/Navbar/index.js'
 import Footer from './components/Footer/index.js'
+import Audio from './components/Audio-Gear/index.js'
 import './App.css';
 
 function App() {
@@ -8,6 +10,7 @@ function App() {
       
       <Navbar></Navbar>
       <Footer></Footer>
+      <Audio></Audio>
 
     </div>
   );
