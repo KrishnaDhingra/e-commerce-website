@@ -1,6 +1,5 @@
-import logo from './logo.svg';
-import Navbar from './navbar.js'
-import Footer from './footer.js'
+import Navbar from './components/Navbar/index.js'
+import Footer from './components/Footer/index.js'
 import './App.css';
 
 function App() {

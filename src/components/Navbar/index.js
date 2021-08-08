@@ -1,4 +1,4 @@
-import './App.css';
+import "./navbar.css";
 
 function Navbar() {
   return (
@@ -22,6 +22,7 @@ function Navbar() {
           <li><a>SPEAKERS</a></li>
           <li><a>EARPHONES</a></li>
         </ul>
+        
         <div className="shopping_cart_icon_outer">
           <img src="https://otmanezahhari.github.io/Audiophile/assets/shared/desktop/icon-cart.svg" alt="Cart"/>
         </div>
