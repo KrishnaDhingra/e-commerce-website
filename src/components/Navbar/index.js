@@ -28,9 +28,6 @@ function Navbar() {
         </div>
       </nav>
 
-      <div className="header">
-        <img className="hero_image" src="https://github.com/otmanezahhari/Audiophile/blob/master/src/assets/home/desktop/image-hero.jpg" alt="hero_image"/>
-      </div>
     </div>
   );
 }

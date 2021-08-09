@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Manrope', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: white;
+}
+.shop{
+    display: flex;
+    width: 1100px;
+    margin: 100px auto;
+    gap: 2rem;
+}
+.shop_inner{
+    flex-basis: 33%;
+    background-color: #ECECEC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+    gap: 0.5rem;
+    border-radius: 0.5rem;
+}
+.shop_image{
+    transform: translateY(-110px);
+    height: 250px;
+    scale: 1/1;
+}
+#image1{transform: translateY(-120px);}
+
+#image3{transform: translateY(-100px);}
+
+.shop_link_outer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+}
+.arrow{
+    color: rgb(255, 123, 0);
+}
+.product_name{
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    line-height: 25px;
+    color: black;
+    margin-top: -155px;
+}
+.shop_link{
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    line-height: 25px;
+    color: grey;
+}
+.shop_link:hover{
+    color: rgb(243, 144, 52);
+}
+@media only screen and (max-width: 1160px) {
+    .shop{
+      width: 90%;
+    }
+    .shop_image{
+        height: 210px;
+    }
+    .shop{
+        gap: 4vw;
+    }
+  }
+@media only screen and (max-width: 890px) {
+    .shop_image{
+        height: 160px;
+    }
+}
+@media only screen and (max-width: 630px) {
+    .shop{
+        flex-direction: column;
+        gap: 5rem;
+    }
+    .shop_inner{
+        padding: 31px 0px;        
+    }
+    .shop_image{
+        height: 240px;
+    }
+}
+@media only screen and (max-width: 460px) {
+    .shop_image{
+        height: 200px;
+    }
+}
