@@ -1,9 +1,13 @@
-import Navbar from './components/Navbar/index.js'
-import Footer from './components/Footer/index.js'
-import Audio from './components/Audio-Gear/index.js'
-import Shop from './components/Shop/index.js'
-import Preview from './components/Preview/index.js'
+// import Navbar from './components/Navbar/index.js'
+// import Footer from './components/Footer/index.js'
+// import Audio from './components/Audio-Gear/index.js'
+// import Shop from './components/Shop/index.js'
+// import Preview from './components/Preview/index.js'
 // import { shop, product_data } from  './components/data'
+
+
+
+import Showcase_Header from './components/Showcase_Header/index.js'
 import './App.css';
 
 function App() {
@@ -11,7 +15,11 @@ function App() {
   return (
     <div className="app">
       
-      <Navbar></Navbar>
+      <Showcase_Header></Showcase_Header>
+
+
+
+      {/* <Navbar></Navbar>
       <div className="header">
         <div className="header_inner">
 
@@ -39,7 +47,8 @@ function App() {
       <Shop></Shop>
       <Preview></Preview>
       <Audio></Audio>
-      <Footer></Footer>
+      <Footer></Footer> */}
+
 
     </div>
   );
