@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Manrope', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.preview{
+    display: flex;
+    flex-direction: column;;
+    width: 1100px;
+    place-items: center;
+    gap: 3rem;
+    margin: 100px auto;
+}
+.zx9_preview{
+    border-radius: 10px;
+    z-index: 1;
+    width: 100%;
+    height: 600px;
+    box-sizing: border-box;
+    background-color: #D87D4A;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    gap: 10rem;
+    align-items: center;
+    padding: 0px 100px;
+}
+/* .zx9_preview::before{
+    z-index: -1;
+    content: '';
+    position: absolute;
+    height: 500px; 
+    width: 500px;
+    border: 2px solid white;
+    margin-bottom:  -200px;
+    border-radius: 50%;
+    opacity: 0.1;
+} */
+.zx9_image{
+    margin-top: 95px;
+    height: 530px;
+    width: 450px;
+    bottom: 0px;
+}
+.zx9_heading{
+    color: white;
+    font-size: 4rem;
+    line-height: 70px;
+}
+.zx9_content{
+    font-size: 1rem;
+    line-height: 27px;
+    color: rgb(250, 250, 250);
+}
+.zx7_preview{
+    border-radius: 10px;
+    display: flex;
+    background-image: url('https://otmanezahhari.github.io/Audiophile/assets/home/desktop/image-speaker-zx7.jpg');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 330px;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-direction: column;
+    padding: 0px 100px;
+}
+.zx7_button, .zx9_button{
+    border: 1px solid black;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    color: black;
+    font-weight: 700;
+    height: 70px;
+    width: 201px;
+    font-size: 0.9rem;
+}
+.zx9_button{
+    background-color: black;
+    color: white;
+}
+.zx7_button:hover{
+    background-color: black;
+    color: white;
+}
+.zx7_heading, .yx1_heading{
+    letter-spacing: 2px;;
+}
+.yx1_preview{
+    border-radius: 10px;
+    display: flex;
+    width: 100%;
+    height: 330px;
+    gap: 2rem;
+}
+.yx1_image{
+    height: 100%;
+    width: 100%;
+}
+.yx1_left{
+    flex-basis: 75%;
+}
+ 
+.yx1_right{
+    flex-basis: 50%
+}
+.yx1_image, .zx7_image{
+    border-radius: 10px;
+}
+.yx1_right{
+    border-radius: 10px;
+    background-color: #F1F1F1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 100px;
+    align-items: flex-start;
+}
+@media only screen and (max-width: 1160px) {
+    .preview{
+        width: 90%;
+    }
+    .zx9_preview{
+        height: auto;
+        flex-direction: column;
+        padding-bottom: 100px;
+    }
+    .zx9_right{
+        display: flex;
+        flex-direction: column;
+        width: 42%;
+        justify-content: center;
+        align-items: center;
+        gap: 1.22rem;
+    }
+    .zx9_image{
+        height: 330px;
+        width: 270px;
+        margin-bottom: -100px;
+    }
+    .zx9_heading, .zx9_content{
+        font-size: 4.4rem;
+        text-align: center;
+    }
+    .zx9_content{
+        font-size: 1.1rem;
+        margin-top: -30px;
+    }
+    .yx1.preview{
+        display: flex;
+        box-sizing: border-box;
+    }
+
+}
+@media only screen and (max-width: 740px){
+    .zx9_image{
+        margin-top: 95px;
+        height: 250px;
+        width: 190px;
+        bottom: 0px;
+    }
+    .zx9_preview{
+        gap: 6rem;
+    }
+     
+    .yx1_right{
+        padding: 0px 5vw;
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 300px;
+        height: auto;
+    }
+    .yx1_preview{
+        flex-direction: column;
+        height: auto;
+    }
+    .zx7_preview{
+        padding: 0px 5vh;
+    }
+    .yx1_image{
+        content: url('https://raw.githubusercontent.com/otmanezahhari/Audiophile/master/src/assets/home/mobile/image-earphones-yx1.jpg')
+    }
+    .zx9_right{
+        width: 100%;
+    }
+    .zx9_content{
+        width: 130%;
+    }
+}
+@media only screen and (max-width: 500px){
+
+    .zx9_image{
+        margin-top: 95px;
+        height: 180px;
+        width: 130px;
+        bottom: 0px;
+    }
+    .zx9_heading{
+        font-size: 3.5rem;
+    }
+    .zx9_content{
+        width: 200%;
+    }
+}

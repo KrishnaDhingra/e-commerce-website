@@ -1,11 +1,13 @@
-import Header from './components/Header/index.js'
 import Navbar from './components/Navbar/index.js'
 import Footer from './components/Footer/index.js'
 import Audio from './components/Audio-Gear/index.js'
 import Shop from './components/Shop/index.js'
+import Preview from './components/Preview/index.js'
+// import { shop, product_data } from  './components/data'
 import './App.css';
 
 function App() {
+
   return (
     <div className="app">
       
@@ -35,6 +37,7 @@ function App() {
       </div>
 
       <Shop></Shop>
+      <Preview></Preview>
       <Audio></Audio>
       <Footer></Footer>
 
