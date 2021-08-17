@@ -17,7 +17,7 @@ function Audio() {
                 </div>
             </div>
 
-            <img className="image-best-gear-image" src="https://github.com/otmanezahhari/Audiophile/blob/master/src/assets/shared/mobile/image-best-gear.jpg" alt="best audio gear"/>
+            <img className="image-best-gear-image" src="https://otmanezahhari.github.io/Audiophile/assets/shared/desktop/image-best-gear.jpg" alt="best audio gear"/>
 
         </div>
     </div>

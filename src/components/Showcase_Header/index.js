@@ -1,10 +1,13 @@
-import Navbar from './components/Navbar/index.js'
+import Navbar from '../Navbar/index.js'
+import './showcase_header.css'
 
 function Showcase_Header(){
     return(
         <div className="showcase_header">
+
             <Navbar></Navbar>
-            <p>Hello world</p>
+
+            <div className="heading_header">HEADPHONES</div>
 
         </div>
     )

@@ -1,21 +1,49 @@
-// import Navbar from './components/Navbar/index.js'
-// import Footer from './components/Footer/index.js'
-// import Audio from './components/Audio-Gear/index.js'
-// import Shop from './components/Shop/index.js'
-// import Preview from './components/Preview/index.js'
-// import { shop, product_data } from  './components/data'
-
-
+import Navbar from './components/Navbar/index.js'
+import Footer from './components/Footer/index.js'
+import Audio from './components/Audio-Gear/index.js'
+import Shop from './components/Shop/index.js'
+import Preview from './components/Preview/index.js'
+import { shop, product_data } from  './data'
 
 import Showcase_Header from './components/Showcase_Header/index.js'
+import Showcase from './components/Showcase/index.js'
+import Product_Detail from './components/Product_Detail/index.js'
 import './App.css';
 
 function App() {
 
+  // product_data.map(element =>{
+  //   element.name === 'YX1 WIRELESS EARPHONES' ? console.log(element.name, element.description, element.price, element.features, element.in_box.map(element2 =>{
+  //     return (element2.quantity)
+  //   })) : console.log("")
+  // })
+
+  
   return (
     <div className="app">
+
+      <Product_Detail></Product_Detail>
+
+      {/* Showcase Page         Showcase Page          Showcase Page          Showcase Page          Showcase Page  */}
+
+
+
+      {/* <Showcase_Header></Showcase_Header>
+
+      {shop[2].map(element =>{
+          return (
+            <Showcase image={element.desktop_image} name={element.name} info={element.description}></Showcase>
+          )
+      })}
       
-      <Showcase_Header></Showcase_Header>
+      <Shop></Shop>
+      <Audio></Audio>
+      <Footer></Footer> */}
+
+
+
+
+      {/* Home Page          Home Page          Home Page          Home Page         Home Page          Home Page        Home Page */}
 
 
 
