@@ -10,5 +10,8 @@ import Showcase_Header from '../Showcase_Header/index.js'
 import Showcase from '../Showcase/index.js'
 
 function Product_Detail(){
+    return(
+        <p>Hello everyone</p>
+    )
 }
 export default Product_Detail

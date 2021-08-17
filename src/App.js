@@ -11,13 +11,6 @@ import Product_Detail from './components/Product_Detail/index.js'
 import './App.css';
 
 function App() {
-
-  // product_data.map(element =>{
-  //   element.name === 'YX1 WIRELESS EARPHONES' ? console.log(element.name, element.description, element.price, element.features, element.in_box.map(element2 =>{
-  //     return (element2.quantity)
-  //   })) : console.log("")
-  // })
-
   
   return (
     <div className="app">
