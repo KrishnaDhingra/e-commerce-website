@@ -38,6 +38,7 @@ body {
 }
 .audio-text{
     font-size: 1rem;
+    text-align: justify;
     font-weight: 400;
     color: rgb(137, 137, 137);
     letter-spacing: 0.7px;
@@ -65,7 +66,7 @@ body {
     .audio-text{
         font-size: 1.2rem;
         line-height: 26px;
-        text-align: center;
+        text-align: justify;
     }
     .audio-text-outer{
         justify-self: center;
@@ -80,22 +81,29 @@ body {
 @media only screen and (max-width: 605px) {
     .image-best-gear-image{
         content: url('https://otmanezahhari.github.io/Audiophile/assets/shared/desktop/image-best-gear.jpg');
-        height: 400px;
+        height: 100%;
     }
     .audio-heading, .best{
         font-size: 37px;
     }
-
+    
     .audio-text{
         font-size: 1rem;
         line-height: 24px;
-        text-align: center;
     }
     .audio-heading-outer{
         width: 100%;
     }
     .audio-text-outer{
         width: 90%;
+    }
+}
+@media only screen and (max-width: 336px){
+    .audio-heading-outer{
+        width: 120%;
+    }
+    .audio-heading, .best{
+        font-size: 28px;
     }
 }
 

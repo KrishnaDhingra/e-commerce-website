@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Manrope', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: white;
+}
+.may_like{
+  display: flex;
+  width: 1230px;
+  gap: 3rem;
+  margin: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.may_like_product_container{
+  display: flex;
+  margin: auto;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.first_product, .second_product, .third_product{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 0.5rem;
+}
+.may_like_product_image{
+    width: 348px;
+    height: 100%;
+    border-radius: 0.5rem;
+}
+.may_like_product_name{
+    font-size: 22px;
+    width: 110%;
+    font-weight: 700;
+    margin-top: 30px;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 0px;
+}
+
+@media only screen and (max-width: 1160px){
+  .may_like_product_container{
+    width: 100%;
+  }
+  .first_product, .second_product, .third_product{
+    flex-basis: 33.33%;
+    overflow: hidden;
+  }
+  .may_like_product_image{
+    width: 100%;
+  }
+  .may_like{
+    width: 90%;
+  }
+
+}
+@media only screen and (max-width: 1100px){
+  .may_like_product_image{
+    height: 100%;
+  }
+
+}
+@media only screen and (max-width: 630px){
+  .may_like_product_container{
+    flex-direction: column;
+  }
+  .may_like_product_image{
+    width: 100%;
+  }
+
+
+}

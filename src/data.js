@@ -65,7 +65,13 @@ export let shop = [
 
 export let product_data = [
     {
+        id: 0,
+
         name: 'XX99 MARK II HEADPHONES',
+
+        desktop_image: 'https://otmanezahhari.github.io/Audiophile/assets/product-xx99-mark-two-headphones/desktop/image-product.jpg',
+        tablet_image: '',
+        mobile_image: '',
 
         description: 'The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound.',
 
@@ -79,6 +85,12 @@ export let product_data = [
             {quantity: '1x', material: 'User Manual'},
             {quantity: '1x', material: '3.5mm 5m Audio Cable'},
             {quantity: '1x', material: 'Travel Bag'}
+        ],
+
+        grid_images: [
+            {top_left:''},
+            {bottom_left:''},
+            {right:''} 
         ]
 
     },
@@ -88,7 +100,14 @@ export let product_data = [
 
 
     {
+        id: 1,
+        
         name: 'XX99 MARK I HEADPHONES',
+
+        desktop_image: 'https://otmanezahhari.github.io/Audiophile/assets/product-xx99-mark-one-headphones/desktop/image-product.jpg',
+        tablet_image: '',
+        mobile_image: '',
+
 
         description: 'As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go.',
 
@@ -101,6 +120,12 @@ export let product_data = [
             {quantity: '2x', material: 'Replacement Earcups'},
             {quantity: '1x', material: 'User Manual'},
             {quantity: '1x', material: '3.5mm 5m Audio Cable'}
+        ],
+
+        grid_images: [
+            {top_left:''},
+            {bottom_left:''},
+            {right:''} 
         ]
 
     },
@@ -110,7 +135,13 @@ export let product_data = [
 
 
     {
+        id: 2,
+        
         name: 'XX59 HEADPHONES',
+        
+        desktop_image: 'https://otmanezahhari.github.io/Audiophile/assets/product-xx59-headphones/desktop/image-product.jpg',
+        tablet_image: '',
+        mobile_image: '',
 
         description: 'Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59 headphones. The stylish yet durable versatile wireless headset is a brilliant companion at home or on the move.',
 
@@ -123,6 +154,12 @@ export let product_data = [
             {quantity: '2x', material: 'Replacement Earcups'},
             {quantity: '1x', material: 'User Manual'},
             {quantity: '1x', material: '3.5mm 5m Audio Cable'},
+        ],
+
+        grid_images: [
+            {top_left:''},
+            {bottom_left:''},
+            {right:''} 
         ]
         
     },
@@ -132,7 +169,13 @@ export let product_data = [
 
 
     {
+        id: 3,
+        
         name: 'ZX9 SPEAKERS',
+        
+        desktop_image: 'https://otmanezahhari.github.io/Audiophile/assets/product-zx9-speaker/desktop/image-product.jpg',
+        tablet_image: '',
+        mobile_image: '',
 
         description: 'Upgrade your sound system with the all new ZX9 active speaker. It’s a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setups.',
 
@@ -146,6 +189,12 @@ export let product_data = [
             {quantity: '1x', material: 'User Manual'},
             {quantity: '1x', material: '3.5mm 5m Audio Cable'},
             {quantity: '1x', material: '10m Optical Cable'}
+        ],
+
+        grid_images: [
+            {top_left:''},
+            {bottom_left:''},
+            {right:''} 
         ]
 
     },
@@ -155,7 +204,13 @@ export let product_data = [
 
 
     {
+        id: 4,
+        
         name: 'ZX7 SPEAKERS',
+        
+        desktop_image: 'https://otmanezahhari.github.io/Audiophile/assets/product-zx7-speaker/desktop/image-product.jpg',
+        tablet_image: '',
+        mobile_image: '',
 
         description: 'Stream high quality sound wirelessly with minimal to no loss. The ZX7 speaker uses high-end audiophile components that represents the top of the line powered speakers for home or studio use.',
 
@@ -169,6 +224,12 @@ export let product_data = [
             {quantity: '1x', material: 'User Manual'},
             {quantity: '1x', material: '3.5mm 5m Audio Cable'},
             {quantity: '1x', material: '7.5m Optical Cable'}
+        ],
+
+        grid_images: [
+            {top_left:''},
+            {bottom_left:''},
+            {right:''} 
         ]
 
     },
@@ -178,7 +239,13 @@ export let product_data = [
 
 
     {
+      
+        id: 5,
         name: 'YX1 WIRELESS EARPHONES',
+        
+        desktop_image: 'https://otmanezahhari.github.io/Audiophile/assets/product-yx1-earphones/desktop/image-product.jpg',
+        tablet_image: '',
+        mobile_image: '',
 
         description: 'Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature.',
 
@@ -192,6 +259,12 @@ export let product_data = [
             {quantity: '1x', material: 'User Manual'},
             {quantity: '1x', material: 'USB-C Charging Cable'},
             {quantity: '1x', material: 'Travel Pouch'}
+        ],
+
+        grid_images: [
+            {top_left:''},
+            {bottom_left:''},
+            {right:''} 
         ]
 
     }
