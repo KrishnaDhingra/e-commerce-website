@@ -1,4 +1,5 @@
 import "./footer.css";
+import { Link } from 'react-router-dom'
 
 function Footer() {
   return (
@@ -10,10 +11,20 @@ function Footer() {
             <div className="footer_logo"><img src="https://otmanezahhari.github.io/Audiophile/assets/shared/desktop/logo.svg" alt="Cart"/></div>
 
             <ul className="footer_ul">
-                <li className="footer_first_link"><a>HOME</a></li>
-                <li><a>HEADPHONES</a></li>
-                <li><a>SPEAKERS</a></li>
-                <li className="last_link"><a>EARPHONES</a></li>
+                <Link className="link-tag" to={{pathname: '/e-commerce-website'}}>
+                    <li className="footer_first_link"><a>HOME</a></li>
+                </Link>
+                <Link className="link-tag" to={{pathname: '/headphones', state: {num:0, text:'HEADPHONES'}}}>
+                    <li><a>HEADPHONES</a></li>
+
+                </Link>
+                <Link className="link-tag" to={{pathname: '/speakers', state: {num:1, text:'SPEAKERS'}}}>
+                    <li><a>SPEAKERS</a></li>
+                </Link>
+                <Link className="link-tag" to={{pathname: '/earphones', state: {num:2, text:'EARPHONES'}}}>
+                    <li className="last_link"><a>EARPHONES</a></li>
+                </Link>
+                
             </ul>
 
           </div>

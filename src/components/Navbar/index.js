@@ -1,4 +1,5 @@
 import "./navbar.css";
+import { Link } from 'react-router-dom'
 
 function Navbar() {
   return (
@@ -17,10 +18,18 @@ function Navbar() {
         </div>
 
         <ul className="nav_ul">
-          <li className="first_link"><a>HOME</a></li>
-          <li><a>HEADPHONES</a></li>
-          <li><a>SPEAKERS</a></li>
-          <li><a>EARPHONES</a></li>
+          <Link className="link-tag" to={{pathname: '/e-commerce-website'}}>
+            <li className="first_link"><a>HOME</a></li>
+          </Link>
+          <Link className="link-tag" to={{pathname: '/headphones', state: {num:0, text:'HEADPHONES'}}}>
+            <li><a>HEADPHONES</a></li>
+          </Link>
+          <Link className="link-tag" to={{pathname: '/speakers', state: {num:1, text:'SPEAKERS'}}}>
+            <li><a>SPEAKERS</a></li>
+          </Link>
+          <Link className="link-tag" to={{pathname: '/earphones', state: {num:2, text:'EARPHONES'}}}>
+            <li><a>EARPHONES</a></li>
+          </Link>
         </ul>
         
         <div className="shopping_cart_icon_outer">

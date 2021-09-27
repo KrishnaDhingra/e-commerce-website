@@ -14,7 +14,7 @@ function Product_Detail(props){
 
     const [product_name, setProduct_name] = useState('ZX7 SPEAKERS')
     const [counter, setCounter] = useState(1)
-
+    
     let id = product_data.map(element =>{
         if(element.name === product_name){
             return element.id

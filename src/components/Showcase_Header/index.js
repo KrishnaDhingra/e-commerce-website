@@ -1,13 +1,11 @@
 import Navbar from '../Navbar/index.js'
 import './showcase_header.css'
 
-function Showcase_Header(){
+function Showcase_Header(props){
     return(
         <div className="showcase_header">
 
-            <Navbar></Navbar>
-
-            <div className="heading_header">HEADPHONES</div>
+            <div className="heading_header">{props.text ? props.text : 'HEADPHONES'}</div>
 
         </div>
     )
