@@ -27,7 +27,7 @@ function App() {
 
         <Navbar></Navbar>
 
-          <Route path={['/e-commerce-website', '/home']} component={Home_Service}/>
+          <Route path={['/', '/e-commerce-website', '/home']} component={Home_Service}/>
           <Route path={['/headphones', '/speakers', '/earphones']} component={Showcase_Service}></Route>
           <Route path={path_list} component={ProductDetailService}></Route>
         
