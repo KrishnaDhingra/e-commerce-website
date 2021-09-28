@@ -1,6 +1,7 @@
 import React from 'react';
 import './may_like.css';
 import {shop, product_data} from '../../data';
+import { Link } from 'react-router-dom'
 
 function May_Like() {
 
@@ -41,18 +42,30 @@ function May_Like() {
                 <div className="first_product">
                     <img className="may_like_product_image" src={first_product[1]}/>
                     <p className="may_like_product_name">{first_product[0]}</p>
-                    <button className="see_product">SEE PRODUCT</button>
+                    <Link to={{pathname: `/${first_product[0].split(" ").join("-").toLowerCase()}`, state: first_product[0].toUpperCase()}}>
+
+                        <button className="showcase_see_product" onClick={() =>{
+                        }}>SEE PRODUCT</button>
+                    </Link>
 
                 </div>
                 <div className="second_product">
                     <img className="may_like_product_image" src={second_product[1]}/>
                     <p className="may_like_product_name">{second_product[0]}</p>
-                    <button className="see_product">SEE PRODUCT</button>
+                    <Link to={{pathname: `/${second_product[0].split(" ").join("-").toLowerCase()}`, state: second_product[0].toUpperCase()}}>
+
+                        <button className="showcase_see_product" onClick={() =>{
+                        }}>SEE PRODUCT</button>
+                    </Link>
                 </div>
                 <div className="third_product">
                     <img className="may_like_product_image" src={third_product[1]}/>
                     <p className="may_like_product_name">{third_product[0]}</p>
-                    <button className="see_product">SEE PRODUCT</button>
+                    <Link to={{pathname: `/${third_product[0].split(" ").join("-").toLowerCase()}`, state: third_product[0].toUpperCase()}}>
+
+                        <button className="showcase_see_product" onClick={() =>{
+                        }}>SEE PRODUCT</button>
+                    </Link>
                 </div>
                 
             </div>

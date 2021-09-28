@@ -11,7 +11,7 @@ function Footer() {
             <div className="footer_logo"><img src="https://otmanezahhari.github.io/Audiophile/assets/shared/desktop/logo.svg" alt="Cart"/></div>
 
             <ul className="footer_ul">
-                <Link className="link-tag" to={{pathname: '/e-commerce-website'}}>
+                <Link className="link-tag" to={{pathname: '/home'}}>
                     <li className="footer_first_link"><a>HOME</a></li>
                 </Link>
                 <Link className="link-tag" to={{pathname: '/headphones', state: {num:0, text:'HEADPHONES'}}}>

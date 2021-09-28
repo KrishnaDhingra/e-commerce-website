@@ -13,7 +13,9 @@ function Navbar() {
             <div className="hamburger_lines"></div>
           </div>
 
-          <div className="logo"><img src="https://otmanezahhari.github.io/Audiophile/assets/shared/desktop/logo.svg" alt="Cart"/></div>
+          <Link to="/home">
+            <div className="logo"><img src="https://otmanezahhari.github.io/Audiophile/assets/shared/desktop/logo.svg" alt="Cart"/></div>
+          </Link>
 
         </div>
 

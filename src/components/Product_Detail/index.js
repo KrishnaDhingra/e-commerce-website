@@ -1,22 +1,14 @@
 import React, {useState, useEffect} from 'react';
 import './product_detail.css'
-import Navbar from '../Navbar/index.js'
-import Footer from '../Footer/index.js'
-import Audio from '../Audio-Gear/index.js'
-import Shop from '../Shop/index.js'
-import Preview from '../Preview/index.js'
 import { shop, product_data } from  '../../data'
-
-import Showcase_Header from '../Showcase_Header/index.js'
-import Showcase from '../Showcase/index.js'
 
 function Product_Detail(props){
 
-    const [product_name, setProduct_name] = useState('ZX7 SPEAKERS')
+    // const [product_name, setProduct_name] = useState('ZX7 SPEAKERS')
     const [counter, setCounter] = useState(1)
     
     let id = product_data.map(element =>{
-        if(element.name === product_name){
+        if(element.name === props.product_name){
             return element.id
         }
     })
@@ -29,7 +21,7 @@ function Product_Detail(props){
     })
 
     let info = product_data.map(element =>{
-        if(element.name === product_name){
+        if(element.name === props.product_name){
             return [element.name, element.desktop_image, element.tablet_image, element.mobile_image, element.description, element.price, element.features]
         }else{
             return null
@@ -46,7 +38,7 @@ function Product_Detail(props){
 
 
     const in_box = product_data.map(element =>{
-        if(element.name === product_name){
+        if(element.name === props.product_name){
             return element.in_box
         }
     })
