@@ -4,7 +4,7 @@ import Audio from './components/Audio-Gear/index.js'
 
 import { product_data, shop } from './data.js'
 
-import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import { BrowserRouter as Router, Route} from 'react-router-dom'
 import { Link } from 'react-router-dom'
 
 import Home_Service from './Services/Home/index.js'
@@ -27,9 +27,9 @@ function App() {
 
         <Navbar></Navbar>
 
-          <Route path={['/', '/e-commerce-website', '/home']} component={Home_Service}/>
-          <Route path={['/headphones', '/speakers', '/earphones']} component={Showcase_Service}></Route>
-          <Route path={path_list} component={ProductDetailService}></Route>
+          <Route path={['/', '/e-commerce-website', '/home']} exact component={Home_Service}/>
+          <Route path={['/headphones', '/speakers', '/earphones']} exact component={Showcase_Service}></Route>
+          <Route path={path_list} exact component={ProductDetailService}></Route>
         
         <Audio></Audio>
         <Footer></Footer>
