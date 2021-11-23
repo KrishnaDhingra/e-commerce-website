@@ -88,9 +88,9 @@ export let product_data = [
         ],
 
         grid_images: [
-            {top_left:''},
-            {bottom_left:''},
-            {right:''} 
+            {top_left:'https://otmanezahhari.github.io/Audiophile/assets/product-yx1-earphones/desktop/image-gallery-1.jpg'},
+            {bottom_left:'https://otmanezahhari.github.io/Audiophile/assets/product-yx1-earphones/desktop/image-gallery-2.jpg'},
+            {right:'https://otmanezahhari.github.io/Audiophile/assets/product-yx1-earphones/desktop/image-gallery-3.jpg'} 
         ]
 
     },
@@ -123,9 +123,9 @@ export let product_data = [
         ],
 
         grid_images: [
-            {top_left:''},
-            {bottom_left:''},
-            {right:''} 
+            {top_left:'https://otmanezahhari.github.io/Audiophile/assets/product-yx1-earphones/desktop/image-gallery-1.jpg'},
+            {bottom_left:'https://otmanezahhari.github.io/Audiophile/assets/product-yx1-earphones/desktop/image-gallery-2.jpg'},
+            {right:'https://otmanezahhari.github.io/Audiophile/assets/product-yx1-earphones/desktop/image-gallery-3.jpg'} 
         ]
 
     },
@@ -157,9 +157,9 @@ export let product_data = [
         ],
 
         grid_images: [
-            {top_left:''},
-            {bottom_left:''},
-            {right:''} 
+            {top_left:'https://otmanezahhari.github.io/Audiophile/assets/product-yx1-earphones/desktop/image-gallery-1.jpg'},
+            {bottom_left:'https://otmanezahhari.github.io/Audiophile/assets/product-yx1-earphones/desktop/image-gallery-2.jpg'},
+            {right:'https://otmanezahhari.github.io/Audiophile/assets/product-yx1-earphones/desktop/image-gallery-3.jpg'} 
         ]
         
     },
@@ -192,9 +192,9 @@ export let product_data = [
         ],
 
         grid_images: [
-            {top_left:''},
-            {bottom_left:''},
-            {right:''} 
+            {top_left:'https://otmanezahhari.github.io/Audiophile/assets/product-yx1-earphones/desktop/image-gallery-1.jpg'},
+            {bottom_left:'https://otmanezahhari.github.io/Audiophile/assets/product-yx1-earphones/desktop/image-gallery-2.jpg'},
+            {right:'https://otmanezahhari.github.io/Audiophile/assets/product-yx1-earphones/desktop/image-gallery-3.jpg'} 
         ]
 
     },
@@ -227,9 +227,9 @@ export let product_data = [
         ],
 
         grid_images: [
-            {top_left:''},
-            {bottom_left:''},
-            {right:''} 
+            {top_left:'https://otmanezahhari.github.io/Audiophile/assets/product-yx1-earphones/desktop/image-gallery-1.jpg'},
+            {bottom_left:'https://otmanezahhari.github.io/Audiophile/assets/product-yx1-earphones/desktop/image-gallery-2.jpg'},
+            {right:'https://otmanezahhari.github.io/Audiophile/assets/product-yx1-earphones/desktop/image-gallery-3.jpg'} 
         ]
 
     },
@@ -262,9 +262,9 @@ export let product_data = [
         ],
 
         grid_images: [
-            {top_left:''},
-            {bottom_left:''},
-            {right:''} 
+            {top_left:'https://otmanezahhari.github.io/Audiophile/assets/product-yx1-earphones/desktop/image-gallery-1.jpg'},
+            {bottom_left:'https://otmanezahhari.github.io/Audiophile/assets/product-yx1-earphones/desktop/image-gallery-2.jpg'},
+            {right:'https://otmanezahhari.github.io/Audiophile/assets/product-yx1-earphones/desktop/image-gallery-3.jpg'} 
         ]
 
     }

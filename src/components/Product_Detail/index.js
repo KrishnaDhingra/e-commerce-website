@@ -1,10 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import './product_detail.css'
-import { shop, product_data } from  '../../data'
+import { product_data } from  '../../data'
 
 function Product_Detail(props){
 
-    // const [product_name, setProduct_name] = useState('ZX7 SPEAKERS')
     const [counter, setCounter] = useState(1)
     
     let id = product_data.map(element =>{
@@ -78,7 +77,7 @@ function Product_Detail(props){
                             <div className="quantity_counter">{counter}</div>
                             <div className="increase" onClick = {() => change_counter('increase')}>+</div>
                         </div>
-                        <button className="add_to_cart">ADDD TO CART</button>
+                        <button className="add_to_cart">ADD TO CART</button>
 
                     </div>
 
