@@ -16,9 +16,35 @@ body {
   grid-template-areas: "top_left just_right"
                       "bottom_left just_right";
   gap: 2rem;
-  margin: auto;
-
+  margin: 8rem auto;
+  
+}
+.image{
+  border-radius: 0.8rem;
+  width: 100%;
+  scale: 1/1;
+  margin: 0;
+  padding: 0;
 }
 .top_left{grid-area: top_left}
 .bottom_left{grid-area: bottom_left}
 .right{grid-area: just_right}
+
+@media only screen and (max-width: 1160px) {
+  .product_grid_container{
+    width: 90%;
+    grid-template-columns: 40% 57%;
+    grid-template-rows: auto auto;
+    gap: 1rem;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .product_grid_container{
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "top_left"
+                          "bottom_left"
+                          "just_right"
+  }
+}

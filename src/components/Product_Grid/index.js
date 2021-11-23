@@ -24,9 +24,9 @@ function Product_Grid(props){
 
     return (
         <div className="product_grid_container">
-            <img src={top_left} alt="" className="top_left" />
-            <img src={bottom_left} alt="" className="bottom_left" />
-            <img src={right} alt="" className="right" />
+            <img src={top_left} alt="" className="top_left image" />
+            <img src={bottom_left} alt="" className="bottom_left image" />
+            <img src={right} alt="" className="right image" />
         </div>
     )
 }

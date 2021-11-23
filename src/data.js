@@ -88,9 +88,9 @@ export let product_data = [
         ],
 
         grid_images: [
-            {top_left:'https://otmanezahhari.github.io/Audiophile/assets/product-yx1-earphones/desktop/image-gallery-1.jpg'},
-            {bottom_left:'https://otmanezahhari.github.io/Audiophile/assets/product-yx1-earphones/desktop/image-gallery-2.jpg'},
-            {right:'https://otmanezahhari.github.io/Audiophile/assets/product-yx1-earphones/desktop/image-gallery-3.jpg'} 
+            {top_left:'https://audiophille.netlify.app/product-xx99-mark-two-headphones/desktop/image-gallery-1.jpg'},
+            {bottom_left:'https://audiophille.netlify.app/product-xx99-mark-two-headphones/desktop/image-gallery-2.jpg'},
+            {right:'https://audiophille.netlify.app/product-xx99-mark-two-headphones/desktop/image-gallery-3.jpg'} 
         ]
 
     },
@@ -123,9 +123,9 @@ export let product_data = [
         ],
 
         grid_images: [
-            {top_left:'https://otmanezahhari.github.io/Audiophile/assets/product-yx1-earphones/desktop/image-gallery-1.jpg'},
-            {bottom_left:'https://otmanezahhari.github.io/Audiophile/assets/product-yx1-earphones/desktop/image-gallery-2.jpg'},
-            {right:'https://otmanezahhari.github.io/Audiophile/assets/product-yx1-earphones/desktop/image-gallery-3.jpg'} 
+            {top_left:'https://audiophille.netlify.app/product-xx99-mark-one-headphones/desktop/image-gallery-1.jpg'},
+            {bottom_left:'https://audiophille.netlify.app/product-xx99-mark-one-headphones/desktop/image-gallery-2.jpg'},
+            {right:'https://audiophille.netlify.app/product-xx99-mark-one-headphones/desktop/image-gallery-3.jpg'} 
         ]
 
     },
@@ -157,9 +157,9 @@ export let product_data = [
         ],
 
         grid_images: [
-            {top_left:'https://otmanezahhari.github.io/Audiophile/assets/product-yx1-earphones/desktop/image-gallery-1.jpg'},
-            {bottom_left:'https://otmanezahhari.github.io/Audiophile/assets/product-yx1-earphones/desktop/image-gallery-2.jpg'},
-            {right:'https://otmanezahhari.github.io/Audiophile/assets/product-yx1-earphones/desktop/image-gallery-3.jpg'} 
+            {top_left:'https://audiophille.netlify.app/product-xx59-headphones/desktop/image-gallery-1.jpg'},
+            {bottom_left:'https://audiophille.netlify.app/product-xx59-headphones/desktop/image-gallery-2.jpg'},
+            {right:'https://audiophille.netlify.app/product-xx59-headphones/desktop/image-gallery-3.jpg'} 
         ]
         
     },
@@ -192,9 +192,9 @@ export let product_data = [
         ],
 
         grid_images: [
-            {top_left:'https://otmanezahhari.github.io/Audiophile/assets/product-yx1-earphones/desktop/image-gallery-1.jpg'},
-            {bottom_left:'https://otmanezahhari.github.io/Audiophile/assets/product-yx1-earphones/desktop/image-gallery-2.jpg'},
-            {right:'https://otmanezahhari.github.io/Audiophile/assets/product-yx1-earphones/desktop/image-gallery-3.jpg'} 
+            {top_left:'https://audiophille.netlify.app/product-zx9-speaker/desktop/image-gallery-1.jpg'},
+            {bottom_left:'https://audiophille.netlify.app/product-zx9-speaker/desktop/image-gallery-2.jpg'},
+            {right:'https://audiophille.netlify.app/product-zx9-speaker/desktop/image-gallery-3.jpg'} 
         ]
 
     },
@@ -227,9 +227,9 @@ export let product_data = [
         ],
 
         grid_images: [
-            {top_left:'https://otmanezahhari.github.io/Audiophile/assets/product-yx1-earphones/desktop/image-gallery-1.jpg'},
-            {bottom_left:'https://otmanezahhari.github.io/Audiophile/assets/product-yx1-earphones/desktop/image-gallery-2.jpg'},
-            {right:'https://otmanezahhari.github.io/Audiophile/assets/product-yx1-earphones/desktop/image-gallery-3.jpg'} 
+            {top_left:'https://audiophille.netlify.app/product-zx7-speaker/desktop/image-gallery-1.jpg'},
+            {bottom_left:'https://audiophille.netlify.app/product-zx7-speaker/desktop/image-gallery-2.jpg'},
+            {right:'https://audiophille.netlify.app/product-zx7-speaker/desktop/image-gallery-3.jpg'} 
         ]
 
     },

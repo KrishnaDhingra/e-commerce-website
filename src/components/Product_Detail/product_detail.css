@@ -14,7 +14,7 @@ body {
   align-items: center;
   flex-direction: column;
   width: 1100px;
-  margin: 11rem auto;
+  margin: 0rem auto;
   gap: 7rem;
 }
 .product_image{
