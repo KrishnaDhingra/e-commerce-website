@@ -61,8 +61,15 @@ body {
   margin-top: 1rem;
   width: 10rem;
 }
-
-
+.navbar_shop_container{
+  background-color: rgb(226, 220, 220);
+  display: none;
+  justify-content: center;
+  width: 100vw;
+  height: auto;
+  position: absolute;
+  z-index: 2
+}
 @media only screen and (max-width: 1160px) {
   .header_inner{
     width: 90%;
@@ -92,6 +99,9 @@ body {
     font-size: 1.1rem;
     line-height: 30px;
     text-align: center;
+  }
+  .navbar_shop_container{
+    display: flex;
   }
 }
 @media only screen and (max-width: 615px) {

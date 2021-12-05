@@ -15,6 +15,7 @@ body {
   flex-direction: column;
   width: 1100px;
   margin: 0rem auto;
+  margin-top: 5rem;
   gap: 7rem;
 }
 .product_image{

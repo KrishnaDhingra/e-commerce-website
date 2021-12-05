@@ -1,13 +1,13 @@
 import "./navbar.css";
 import { Link } from 'react-router-dom'
 
-function Navbar() {
+function Navbar(props) {
   return (
     <div className="navbar">
       <nav>
         <div className="logo_hamburger_outer">
 
-          <div className="hamburger_icon">
+          <div className="hamburger_icon" onClick={() => props.onSelect()}>
             <div className="hamburger_lines"></div>
             <div className="hamburger_lines"></div>
             <div className="hamburger_lines"></div>
