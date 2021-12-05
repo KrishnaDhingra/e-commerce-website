@@ -35,7 +35,7 @@ function May_Like() {
     return(
         <div className="may_like">
 
-            <h1 className="may_like_heading">YOU MAY ALSO LIKE</h1>
+            <h2 className="may_like_heading">YOU MAY ALSO LIKE</h2>
 
             <div className="may_like_product_container">
 

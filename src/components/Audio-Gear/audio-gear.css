@@ -43,6 +43,9 @@ body {
     color: rgb(137, 137, 137);
     letter-spacing: 0.7px;
 }
+.image-best-gear-image{
+    border-radius: 0.5rem;
+}
 @media only screen and (max-width: 1160px) {
     .image-best-gear-image{
         content: url('https://raw.githubusercontent.com/otmanezahhari/Audiophile/master/src/assets/shared/tablet/image-best-gear.jpg');

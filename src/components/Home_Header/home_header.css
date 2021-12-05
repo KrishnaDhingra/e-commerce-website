@@ -15,6 +15,9 @@ body {
   align-items: center;
   overflow: hidden;
   background-color: #191919;
+  background-image: url('https://github.com/Glattoni/Audiophile_e-commerce/blob/main/public/home/desktop/image-hero.jpg?raw=true');
+  background-size: cover;
+  background-position: center;
 }
 .header_inner{
   width: 1080px;
@@ -67,6 +70,9 @@ body {
   .header_inner{
     width: 90%;
   }
+  .header{
+    background-image: url('https://github.com/Glattoni/Audiophile_e-commerce/blob/main/public/home/tablet/image-header.jpg?raw=true');
+  }
 }
 @media only screen and (max-width: 860px) {
   .right-content{
@@ -101,7 +107,10 @@ body {
   .hero-about-outer{
     width: 90%;
   }
-
+  .header{
+    background-image: url('https://github.com/Glattoni/Audiophile_e-commerce/blob/main/public/home/mobile/image-header.jpg?raw=true');
+  }
+  
 }
 @media only screen and (max-width: 365px){
   .new_product{
