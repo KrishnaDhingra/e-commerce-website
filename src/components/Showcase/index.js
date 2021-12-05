@@ -10,7 +10,6 @@ function Showcase(props){
 
     return(
 
-        <div>
             <div className="showcase">
 
                 
@@ -32,7 +31,6 @@ function Showcase(props){
                     
                 </div>
             </div>
-        </div>
     )
 
 }

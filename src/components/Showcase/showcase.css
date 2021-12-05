@@ -9,12 +9,16 @@ body {
 }
 .showcase{
   display: flex;
+  flex-direction: row-reverse;
   box-sizing: border-box;
   justify-content: center;
   align-items: center;
   width: 1080px;
   margin: 11rem auto;
   gap: 7rem;
+}
+.showcase:nth-child(2n+0){
+  flex-direction: row;
 }
 .showcase_product_image{
   width: 550px;

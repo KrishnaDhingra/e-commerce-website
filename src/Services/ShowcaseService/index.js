@@ -4,7 +4,6 @@ import Showcase_Header from "../../components/Showcase_Header/index.js";
 import { Shop }  from "../../components/Shop/index.js";
 import {shop} from '../../data'
 
-
 function Showcase_Service(props) {
 
   return (
