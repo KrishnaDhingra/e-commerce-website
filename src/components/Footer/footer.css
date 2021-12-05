@@ -7,21 +7,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
     background-color: #191919;
 }
-.navbar{
-  display: flex;
-  justify-content: center;
-  background-color: #101010;
-  height: 5.7rem;
-}
-nav{
-  border-bottom: 1px solid rgb(209, 208, 208);
-  width: 1120px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-
 .footer{
     /* margin: 100px 0px; */
     padding: 50px 0px;

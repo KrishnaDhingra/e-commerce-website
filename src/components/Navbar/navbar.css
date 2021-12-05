@@ -16,7 +16,7 @@ body {
   height: 5.7rem;
 }
 nav{
-  border-bottom: 1px solid rgb(209, 208, 208);
+  border-bottom: 1.1px solid rgba(175, 172, 172, 0.2);
   width: 1120px;
   display: flex;
   justify-content: space-between;
@@ -77,6 +77,62 @@ ul li a, .logo{
   margin: 2px 0px;
 
 }
+.shopping_cart_icon_outer{
+  position: relative;
+}
+.cart{
+  min-height: 310px;
+  height: auto;
+  border-radius: 0.5rem;
+  width: 100vh;
+  max-width: 370px;
+  margin: auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 6rem;
+  right: 0;
+  padding: 1.5rem 1.5rem;
+}
+.upper_container{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.middle_section{
+  text-align: center;
+}
+.upper_section, .bottom_section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.remove_all{
+  font-size: 0.9rem;
+  color: gray;
+  text-decoration: underline;
+}
+.total{
+  color: gray;
+  font-weight: 500;
+}
+.checkout{
+  border: none;
+  height: 10%;
+  max-height: 45px;
+  background-color: #D87D4A;
+  color: white;
+  font-size: 13px;
+  color: rgb(250, 250, 250);
+  font-weight: 600;
+  padding: 16px 25px;
+  letter-spacing: 1.2px;
+  width: 100%;
+}
 
 /* navbar */                  /* navbar */               /* navbar */
 
@@ -88,7 +144,7 @@ ul li a, .logo{
     border: none;
   }
   .navbar{
-    border-bottom: 1px solid rgb(209, 208, 208);
+    border-bottom: 1.1px solid rgba(175, 172, 172, 0.2);
   }
 
 }

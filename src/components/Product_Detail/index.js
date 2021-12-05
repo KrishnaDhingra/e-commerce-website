@@ -1,10 +1,10 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState } from 'react';
 import './product_detail.css'
 import { product_data } from  '../../data'
 
 function Product_Detail(props){
 
-    const [counter, setCounter] = useState(1)
+    const [ counter, setCounter ] = useState(1)
     
     let id = product_data.map(element =>{
         if(element.name === props.product_name){
@@ -52,6 +52,32 @@ function Product_Detail(props){
         }
 
     }
+    let updateData = (name, price, quantity, image) => {
+
+        let newData = {
+            product_name: name,
+            product_price: price,
+            product_quantity: quantity,
+            product_image: image
+        }
+
+        let prevData = JSON.parse(localStorage.getItem('d')) ? JSON.parse(localStorage.getItem('d')) : []
+
+        let check = prevData.some((element) => element.product_name === name)
+
+        if(check === true){
+            prevData.map((element) => {
+                if(element.product_name === name){
+                    element.product_quantity = parseInt(element.product_quantity) + parseInt(quantity)
+                }
+            })
+        }else{
+            prevData.push(newData)
+        }
+        localStorage.setItem('d', JSON.stringify(prevData))
+        console.log(JSON.parse(localStorage.getItem('d')))
+
+    }
 
     return(
 
@@ -77,7 +103,7 @@ function Product_Detail(props){
                             <div className="quantity_counter">{counter}</div>
                             <div className="increase" onClick = {() => change_counter('increase')}>+</div>
                         </div>
-                        <button className="add_to_cart">ADD TO CART</button>
+                        <button className="add_to_cart" onClick={() => updateData(name, price, counter, desktop_image)}>ADD TO CART</button>
 
                     </div>
 
