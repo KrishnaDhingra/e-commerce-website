@@ -30,6 +30,12 @@ function App() {
       setPosition("-100vw")
     }
   }
+
+  window.addEventListener("resize", () => {
+    if(window.innerWidth >= 860){
+      setPosition("-100vw")
+    }
+  })
   return (
     
     <div className="app">
