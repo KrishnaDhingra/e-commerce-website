@@ -115,14 +115,16 @@ function Navbar(props) {
               </div>
 
               {JSON.parse(localStorage.getItem('d')) === null && <h1 className="middle_section">YOUR CART IS EMPTY</h1>}
-
               {JSON.parse(localStorage.getItem('d')) && JSON.parse(localStorage.getItem('d')).map((element => {
                 return (
-                  <div>
-
-                    <img className="cart_image" src={element.product_image} alt=""/>
-                    <h1>{element.product_name}</h1>
-                    <h1>{element.product_price}</h1>
+                  <div className="cart_product_info">
+                    <div className="cart_product_info_left_container">
+                      <img className="cart_image" src={element.product_image} alt=""/>
+                      <div className="name_price_container">
+                        <h1 className="cart_product_name">{element.product_name.substring(0, 3)}</h1>
+                        <h1 className="cart_product_price">{element.product_price}</h1>
+                      </div>
+                    </div>
 
                     <div className="cart_product_quantity">
                       <div className="decrease" onClick = {() => change_counter('decrease', element.product_name, element.product_quantity)}>-</div>
