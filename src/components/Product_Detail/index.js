@@ -26,6 +26,7 @@ function Product_Detail(props){
             return null
         }
     })
+    console.log(info)
 
     const name = info[num][0]
     const desktop_image = info[num][1]

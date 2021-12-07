@@ -1,25 +1,75 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import "./navbar.css";
 import { Link } from 'react-router-dom'
 
 function Navbar(props) {
-
+  const [ num, setNum ] = useState(0)
   const [ visible, setVisible ] = useState(false)
-  const [ total, setTotal] = useState(0)
 
+  useEffect(() => {
+    setNum(num + 1)
+  }, JSON.parse(localStorage.getItem('d')))
+
+  let total = "$0.00"
   let total_price = 0
-  if(JSON.parse(localStorage.getItem('d')).length === 0){
-    setTotal('$0.00')
-  }else{
-    JSON.parse(localStorage.getItem('d')).map((element) => {
-      let price = element.product_price
-      price = price.replaceAll(",", "")
-      price = price.replaceAll("$", "")
-      price = parseInt(price)
-      total_price = total + (price * parseInt(element.product_quantity))
-    })
+  
+  let calculateTotal = () => {
+
+    if(!JSON.parse(localStorage.getItem('d'))){
+      total = total
+    }else{
+      JSON.parse(localStorage.getItem('d')).map((element) => {
+        let price = element.product_price
+        price = price.replaceAll(",", "")
+        price = price.replaceAll("$", "")
+        price = parseInt(price)
+        total_price = total_price + (price * parseInt(element.product_quantity))
+      })
+      total_price = `$${total_price}.00`
+    }
+    return total_price
   }
-  console.log(total_price)
+
+  total = calculateTotal()
+  
+  let change_counter = (effect, name, prevQuantity) =>{
+    
+    if(effect === 'decrease'){
+      if(prevQuantity > 1){
+        
+        let data = JSON.parse(localStorage.getItem('d'))
+        data.map(element => {
+          if(element.product_name === name){
+            element.product_quantity = element.product_quantity - 1
+            console.log(element.product_quantity)
+          }
+        })
+        localStorage.setItem('d', JSON.stringify(data))
+        
+      }else{
+        console.log("nhi ho payega")
+      }
+      
+    }else{
+
+      let data = JSON.parse(localStorage.getItem('d'))
+      data.map(element => {
+        if(element.product_name === name){
+          element.product_quantity = element.product_quantity + 1
+          console.log(element.product_quantity)
+        }
+      })
+      localStorage.setItem('d', JSON.stringify(data))
+    }
+    
+  }
+  
+  
+    let deleteData = () => {
+      localStorage.setItem('d', null)
+      total = "$0.00"
+    }
+
   return (
     <div className="navbar">
       <nav>
@@ -59,31 +109,37 @@ function Navbar(props) {
             <div className="upper_container">
 
               <div className="upper_section">
-                <h3>CART (2)</h3>
-                <a href="" className="remove_all">Remove All</a>
+                <h3>CART ({JSON.parse(localStorage.getItem('d')) === null ? 0 : JSON.parse(localStorage.getItem('d')).length})</h3>
+
+                <a href="" className="remove_all" onClick={() => deleteData()}>Remove All</a>
               </div>
 
-              {JSON.parse(localStorage.getItem('d')).length === 0 && <h1 className="middle_section">YOUR CART IS EMPTY</h1>}
+              {JSON.parse(localStorage.getItem('d')) === null && <h1 className="middle_section">YOUR CART IS EMPTY</h1>}
 
-              {JSON.parse(localStorage.getItem('d')).length > 0 && JSON.parse(localStorage.getItem('d')).map((element => {
+              {JSON.parse(localStorage.getItem('d')) && JSON.parse(localStorage.getItem('d')).map((element => {
                 return (
                   <div>
 
-                    <img src={element.product_image} alt=""/>
+                    <img className="cart_image" src={element.product_image} alt=""/>
                     <h1>{element.product_name}</h1>
                     <h1>{element.product_price}</h1>
-                    <h1>{element.product_quantity}</h1>
+
+                    <div className="cart_product_quantity">
+                      <div className="decrease" onClick = {() => change_counter('decrease', element.product_name, element.product_quantity)}>-</div>
+                      <div className="quantity_counter">{element.product_quantity}</div>
+                      <div className="increase" onClick = {() => change_counter('increase', element.product_name, element.product_quantity)}>+</div>
+                    </div>
                   </div>
 
                 )
               }))}
               <div className="bottom_section">
                 <h4 className="total">TOTAL</h4>
-                <h3 className="total_amount">$1000</h3>
+                <h3 className="total_amount">{total}</h3>
               </div>
 
             </div>
-            <button className="checkout">{JSON.parse(localStorage.getItem('d')).length === 0 ? 'FILL IT' : 'CHECKOUT'}</button>
+            <button className="checkout_button">{JSON.parse(localStorage.getItem('d')) === null ? 'FILL IT' : 'CHECKOUT'}</button>
           </div>}
         </div>
       </nav>
